@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>✔ 글 등 록</h1>
+<hr>
+<!-- 새글 등록을 누르면 나타나야할 것=insertBoard.do -->
+<form action="insertBoard.do" method="post">
+<table border="1">
+	<tr>
+	<td>제 목</td>
+	<td><input type="text" name="title"/></td>
+	</tr>
+	
+	<tr>
+	<td>작성자</td>
+	<td><input type="text" name="writer"/></td>
+	</tr>
+	
+	<tr>
+	<td>내 용</td>
+<!-- 	내용은 좀 많으니까 textarea타입으로, 행수40, 줄수10 -->
+	<td><textarea name="content" cols=40 rows="10">
+	</textarea></td>
+	</tr>
+	
+	<tr>
+		<td colspan="2">
+		<input type="submit" value="등록하기"/>
+	</tr>
+	
+</table>
+</form>
+</body>
+</html>

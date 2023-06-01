@@ -4,9 +4,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import controller.Controller;
+
 import biz.user.UserDAO;
 import biz.user.UserVO;
-import controller.Controller;
 
 public class LoginController implements Controller {
 
@@ -29,7 +30,7 @@ public class LoginController implements Controller {
 		if(user != null ) {
 			HttpSession session = request.getSession();
 			session.setAttribute("user", user);
-			return "ok.jsp";
+			return "getBoardList.do";
 		} else {
 			return "login.html";
 		}

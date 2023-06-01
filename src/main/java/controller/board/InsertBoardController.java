@@ -43,7 +43,8 @@ public class InsertBoardController implements Controller {
 		
 		//게시판리스트 화면으로?
 		//아니면 업로드완료 화면으로?
-		return "board.html";
+//		return "board.html";
 //		return "uploadCompleted.html";
+		return "getBoardList.do";
 	}
 }

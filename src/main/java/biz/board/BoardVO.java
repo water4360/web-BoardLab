@@ -8,7 +8,22 @@ public class BoardVO {
 	private String content;
 	private String writer;
 	private Date regDate;
+	private int hit;
 	
+	
+	
+	
+	public int getHit() {
+		return hit;
+	}
+	public void setHit(int hit) {
+		this.hit = hit;
+	}
+	
+	
+	public BoardVO() {
+		super();
+	}
 	
 	
 	public int getSeq() {
@@ -46,7 +61,7 @@ public class BoardVO {
 	@Override
 	public String toString() {
 		return "BoardVO [seq=" + seq + ", title=" + title + ", content=" + content + ", writer=" + writer + ", regDate="
-				+ regDate + "]";
+				+ regDate + ", hit=" + hit + "]";
 	}
 	
 	
