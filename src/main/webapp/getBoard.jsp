@@ -44,8 +44,8 @@
 				<td><input type="text" name="hit" value="${board.hit}" /></td>
 			</tr>
 			<tr>
-				<td = colspan="2"><input type="submit" value="수정" /> <c:if
-						test="${user.role == 'Admin'}">
+				<td = colspan="2"><input type="submit" value="수정" />
+				<c:if test="${user.role == 'Admin'}">
 						<a href="deleteBoard.do?seq=${board.seq}">삭제</a>
 					</c:if> <a href="getBoardList.do">목록</a>
 			</tr>
